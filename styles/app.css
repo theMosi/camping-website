@@ -94,6 +94,7 @@ a {
   background-color: var(--orange);
   border-radius: 1.5rem;
   position: relative;
+  transition: all 100ms ease-in-out;
 }
 
 .nav__btn-line::before,
@@ -103,6 +104,18 @@ a {
   height: 0.3rem;
   background-color: var(--orange);
   border-radius: 1.5rem;
+  transition: all 250ms ease-in-out;
+}
+
+.nav__btn--open .nav__btn-line {
+  background-color: transparent;
+}
+
+.nav__btn--open .nav__btn-line::before {
+  transform: translateY(7px) rotate(45deg);
+}
+.nav__btn--open .nav__btn-line::after {
+  transform: translateY(-7px) rotate(-45deg);
 }
 
 .nav__btn-line::before {
