@@ -2,6 +2,7 @@
   --orange: #e76f51;
   --white: #fff;
   --grey: #d2d2d2;
+  --dark: #3b3735;
 }
 
 html {
@@ -25,6 +26,22 @@ html {
 
 a {
   text-decoration: none;
+}
+
+/* Helper Classes */
+
+.btn {
+  display: block;
+  border-radius: 10rem;
+  color: var(--white);
+  background-color: var(--dark);
+  width: 18rem;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 /* App Style */
@@ -201,4 +218,26 @@ a {
 .nav__btn-line::after {
   position: absolute;
   top: 0.7rem;
+}
+
+.header__content {
+  text-align: center;
+  color: var(--white);
+}
+
+.header__title {
+  font-family: "Archivo Black";
+  font-weight: bold;
+  line-height: 5rem;
+  font-size: 4rem;
+  margin-top: 5.5rem;
+}
+.header__text {
+  font-family: "Roboto";
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.header__discover-button {
+  background-color: var(--orange);
 }
