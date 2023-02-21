@@ -1,12 +1,12 @@
 @font-face {
-    font-family: "Roboto" ;
-    src:"../fonts/Roboto/Roboto-Regular.ttf" format("truetype");
-}   
-@font-face {
-    font-family: "Roboto Medium" ;
-    src:"../fonts/Roboto/Roboto-Medium.ttf" format("truetype");
+  font-family: "Roboto";
+  src: "../fonts/Roboto/Roboto-Regular.ttf" format("truetype");
 }
 @font-face {
-    font-family: "Archivo Black" ;
-    src:"../fonts/Archivo/Archivo-Black.ttf" format("truetype");
+  font-family: "Roboto Medium";
+  src: "../fonts/Roboto/Roboto-Medium.ttf" format("truetype");
+}
+@font-face {
+  font-family: "Archivo Black";
+  src: "../fonts/Archivo/Archivo-Black.ttf" format("truetype");
 }
