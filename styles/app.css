@@ -1,14 +1,116 @@
-html{
-    box-sizing: border-box;
-    font-size: 62.5%;
+:root {
+  --orange: #e76f51;
 }
 
-*, *:before, *:after{
-    box-sizing: inherit;
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
 #father {
-    line-height: 1.6;
-    font-size: 1.6rem;
-    font-family: "Roboto";
+  line-height: 1.6;
+  font-size: 1.6rem;
+  font-family: "Roboto";
+}
+
+/* Reset Style*/
+
+a {
+  text-decoration: none;
+}
+
+/* App Style */
+
+.header {
+  background: linear-gradient(rgba(59, 55, 53, 0.5), rgba(59, 55, 53, 0.5)),
+    url(../images/header-bg.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+.app-logo {
+  display: block;
+  width: 5.5rem;
+  height: 5.5rem;
+}
+.app-logo__img {
+  width: 100%;
+  height: 100%;
+}
+.menu {
+  display: none;
+}
+.menu__item {
+}
+.menu__link {
+}
+.nav-menu {
+  display: none;
+}
+.mobile-menu {
+}
+.mobile-menu__item {
+}
+.mobile-menu__link {
+}
+.nav-menu__links {
+}
+.nav-menu__link {
+}
+.nav-menu__link--border {
+}
+.header__links {
+  display: none;
+}
+.header__link {
+}
+.header__link--border {
+}
+.nav__btn {
+  background-color: #fff;
+  width: 5.5rem;
+  height: 5.5rem;
+  border-radius: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav__btn-line {
+  display: block;
+  width: 3rem;
+  height: 0.3rem;
+  background-color: var(--orange);
+  border-radius: 1.5rem;
+  position: relative;
+}
+
+.nav__btn-line::before,
+.nav__btn-line::after {
+  content: "";
+  width: 3rem;
+  height: 0.3rem;
+  background-color: var(--orange);
+  border-radius: 1.5rem;
+}
+
+.nav__btn-line::before {
+  position: absolute;
+  top: -0.7rem;
+}
+
+.nav__btn-line::after {
+  position: absolute;
+  top: 0.7rem;
 }
