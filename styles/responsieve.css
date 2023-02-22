@@ -2,7 +2,8 @@
 }
 
 @media (min-width: 768px) {
-  .nav__btn {
+  .nav__btn,
+  .nav-menu {
     display: none;
   }
   .menu {

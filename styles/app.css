@@ -115,13 +115,23 @@ a {
 
 .nav-menu {
   position: fixed;
-  background-color: #222;
+  background-color: var(--dark);
   width: 25rem;
   top: 0;
   bottom: 0;
   left: -25rem;
   padding: 2.5rem;
   transition: all 250ms ease-in-out;
+}
+
+.nav-menu__title {
+  font-family: "Archivo Black";
+  font-weight: bold;
+  font-size: 2rem;
+  color: var(--white);
+  border-bottom: 2px solid var(--white);
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .nav-menu--open {
@@ -136,7 +146,33 @@ a {
 }
 .mobile-menu__link {
   color: var(--white);
+  position: relative;
+  transition: all 250ms ease-in-out;
 }
+
+.mobile-menu__link:hover {
+  padding-left: 2.2rem;
+}
+
+.mobile-menu__link::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  width: 0;
+  height: 0.3rem;
+  border-radius: 5rem;
+  background-color: var(--orange);
+  transition: all 250ms ease-in-out;
+}
+
+.mobile-menu__link:hover::before {
+  width: 1.6rem;
+}
+
 .nav-menu__links {
   display: flex;
 }
