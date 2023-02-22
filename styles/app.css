@@ -36,7 +36,6 @@ a {
 /* Helper Classes */
 
 .btn {
-  display: block;
   border-radius: 10rem;
   color: var(--white);
   background-color: var(--dark);
