@@ -3,6 +3,10 @@
   --white: #fff;
   --grey: #d2d2d2;
   --dark: #3b3735;
+  --app-bg: #faf4f2;
+  --primary-font: "Roboto", san-serif;
+  --primary-rg-font: "Roboto Medium", san-serif;
+  --secondary-font: "Archivo Black", san-serif;
 }
 
 html {
@@ -20,6 +24,7 @@ html {
   line-height: 1.6;
   font-size: 1.6rem;
   font-family: "Roboto";
+  background-color: var(--app-bg);
 }
 
 /* Reset Style*/
@@ -286,4 +291,51 @@ a {
 
 .header__discover-button {
   background-color: var(--orange);
+}
+
+/* Main Content*/
+
+.main {
+}
+
+/* Services */
+
+.services {
+  margin-top: -18rem;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -1rem;
+  margin-right: -1rem;
+}
+
+.service {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(242, 241, 241);
+  width: 32rem;
+  height: 26rem;
+  margin-bottom: 2rem;
+  padding: 0 4rem;
+  border-radius: 5rem;
+  color: var(--dark);
+  text-align: center;
+  flex-grow: 1;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.service__img {
+  display: block;
+}
+
+.service__title {
+  font-family: var(--secondary-font);
+  font-weight: bold;
+  font-size: 1.8rem;
+  margin: 1.5rem 0 0.6rem 0;
+}
+
+.service__text {
 }
