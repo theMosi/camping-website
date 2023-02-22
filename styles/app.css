@@ -337,5 +337,116 @@ a {
   margin: 1.5rem 0 0.6rem 0;
 }
 
-.service__text {
+/* Main Content */
+
+.destination {
+  text-align: center;
+}
+
+.destination__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -1rem;
+  margin-right: -1rem;
+}
+
+.destination__img {
+  margin-top: 10rem;
+}
+
+.destination__title {
+  font-family: var(--secondary-font);
+  font-weight: bold;
+  text-align: center;
+  max-width: 28rem;
+  line-height: 1;
+  font-size: 3rem;
+  margin: 3rem auto;
+}
+
+.destination__item {
+  background-color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 2rem 0 2rem 0;
+  padding: 1rem;
+  border-radius: 2rem;
+  flex-grow: 1;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.destination__item-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.destination__item-img {
+  width: 100%;
+  height: 100%;
+  margin-top: 3rem;
+  border-radius: 2rem;
+  object-fit: cover;
+}
+
+.destination__item-like__icon {
+  position: absolute;
+  top: 3.5rem;
+  right: 1.7rem;
+  transform: scale(1.3);
+  background-color: var(--white);
+  padding: 0.5rem;
+  border-radius: 1rem;
+  margin: 0 auto;
+}
+.destination__item-price-text {
+  position: absolute;
+  top: 20rem;
+  right: 10rem;
+  color: var(--orange);
+  background-color: var(--white);
+  padding: 0.7rem 3rem;
+  border-radius: 1.5rem;
+}
+
+.destination__item-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 3rem;
+  max-width: 30rem;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.destination__item-text {
+  font-size: 1.8rem;
+  text-align: center;
+  max-width: 30rem;
+}
+
+.destination__item-btn {
+  margin: 2rem 0rem;
+  background-color: var(--white);
+  font-weight: bold;
+  color: #7e7e7e;
+}
+
+.destination__btn {
+  background-color: transparent;
+  color: var(--orange);
+  margin-top: 2rem;
+  border: 1px solid var(--orange);
+  font-weight: bold;
+  transition: all 200ms ease-in;
+}
+
+.destination__btn:hover {
+  background-color: var(--orange);
+  color: var(--app-bg);
 }
