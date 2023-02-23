@@ -109,6 +109,7 @@
   }
   .footer__scroll {
     left: auto;
+    right: 12rem;
   }
 }
 
@@ -149,6 +150,10 @@
   .footer-list {
     margin-bottom: 0;
     margin-left: 2rem;
+  }
+
+  .footer__scroll {
+    right: 12rem;
   }
 }
 
