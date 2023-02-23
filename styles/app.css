@@ -296,11 +296,6 @@ a {
   background-color: var(--primary-color);
 }
 
-/* Main Content*/
-
-.main {
-}
-
 /* Services */
 
 .services {
@@ -609,18 +604,13 @@ a {
 .footer-content {
   margin-bottom: 2rem;
 }
-.footer-content__description {
-}
+
 .footer-app {
   display: none;
 }
 .footer__title {
   font-family: var(--secondary-font);
   font-weight: bold;
-}
-.footer-app__link {
-}
-.footer-app__img {
 }
 
 /* Footer Right */
@@ -635,10 +625,7 @@ a {
   margin-left: 1rem;
   margin-bottom: 1rem;
 }
-.footer-pages {
-}
-.footer-pages__item {
-}
+
 .footer-pages__link {
   color: var(--dark);
 }
