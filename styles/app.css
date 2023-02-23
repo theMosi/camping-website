@@ -1,3 +1,145 @@
+/* Fonts */
+
+@font-face {
+  font-family: "Roboto";
+  src: "../fonts/Roboto/Roboto-Regular.ttf" format("truetype");
+}
+@font-face {
+  font-family: "Roboto Medium";
+  src: "../fonts/Roboto/Roboto-Medium.ttf" format("truetype");
+}
+@font-face {
+  font-family: "Archivo Black";
+  src: "../fonts/Archivo/Archivo-Black.ttf" format("truetype");
+}
+
+/* Reset CSS */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
 :root {
   --primary-color: #e76f51;
   --secondary-color: #f8e1db;
@@ -30,13 +172,18 @@ html {
   overflow-x: hidden;
 }
 
-/* Reset Style*/
-
 a {
   text-decoration: none;
 }
 
-/* Helper Classes */
+.container {
+  width: 100%;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+}
 
 .btn {
   border-radius: 10rem;
@@ -641,4 +788,189 @@ a {
   text-align: center;
   font-size: 1.4rem;
   margin-top: 2rem;
+}
+
+/* Media Queries*/
+
+@media (max-width: 380px) {
+  .header-content__title {
+    font-size: 4rem;
+  }
+
+  .destination__title {
+    font-size: 2.5rem;
+  }
+
+  .newsletter__title {
+    max-width: 23rem;
+  }
+  .footer {
+    text-align: center;
+  }
+
+  .footer__wrapper {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .footer__right {
+    justify-content: center;
+  }
+
+  .footer-list {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer__wrapper {
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 576px) {
+  .container {
+    width: 54rem;
+  }
+  .footer__wrapper {
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 72rem;
+  }
+  .nav__btn,
+  .nav-menu {
+    display: none;
+  }
+  .menu {
+    display: flex;
+  }
+  .header__links {
+    display: block;
+  }
+
+  .newsletter {
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+  }
+
+  .newsletter__content {
+    flex-basis: 60%;
+    padding-right: 2rem;
+  }
+
+  .newsletter__banner {
+    flex-basis: 40%;
+  }
+
+  .newsletter::before {
+    width: auto;
+    height: auto;
+    top: -5rem;
+    left: -40rem;
+    background-size: auto;
+    background-position: center left;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 96rem;
+  }
+  .nav__link {
+    display: block;
+  }
+
+  .header-content__text {
+    max-width: 50rem;
+  }
+  .newsletter__content {
+    padding-right: 4rem;
+  }
+
+  .footer-app {
+    display: block;
+  }
+
+  .footer-app--mobile {
+    display: none;
+  }
+
+  .footer__wrapper {
+    display: flex;
+  }
+
+  .footer__left {
+    max-width: 50rem;
+  }
+  .footer__scroll {
+    left: auto;
+    right: 12rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 114rem;
+  }
+  .header {
+    min-height: 80rem;
+  }
+  .newsletter {
+    justify-content: space-between;
+  }
+
+  .newsletter__content {
+    flex-basis: auto;
+    padding-right: 2rem;
+    width: 60rem;
+  }
+
+  .newsletter__banner {
+    flex-basis: auto;
+    width: 42rem;
+  }
+
+  .newsletter::before {
+    top: -15rem;
+    left: -15rem;
+  }
+  .footer__wrapper {
+    text-align: left;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+
+  .footer__left {
+    padding-left: 5rem;
+  }
+
+  .footer__right {
+    padding-right: 5rem;
+  }
+
+  .footer-list {
+    margin-bottom: 0;
+    margin-left: 2rem;
+  }
+
+  .footer__scroll {
+    right: 12rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+    width: 137rem;
+  }
+  .newsletter {
+    padding: 3rem 6rem;
+  }
 }
