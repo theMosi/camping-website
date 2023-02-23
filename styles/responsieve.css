@@ -114,6 +114,9 @@
 }
 
 @media (min-width: 1200px) {
+  .header {
+    min-height: 80rem;
+  }
   .newsletter {
     justify-content: space-between;
   }
